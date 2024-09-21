@@ -1,14 +1,11 @@
 import "./Column.css";
-import Task from "./Task";
 import { useStore } from "../store";
-
-// Função seletora estável
-const selectTasksByState = (state) => (store) =>
-  store.tasks.filter((task) => task.state === state);
+import Task from "./Task";
 
 export default function Column({ state }) {
-  // Passando uma função seletora estável para o useStore
-  const tasks = useStore(selectTasksByState(state));
+  const tasks = useStore((store) =>
+    store.tasks.filter((task) => task.state === state)
+  );
 
   return (
     <div className="column">
