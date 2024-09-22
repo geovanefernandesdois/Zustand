@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
+  cursor: move;
 }
 
 .bottomWrapper {
@@ -31,4 +33,9 @@
 
 .DONE {
   background: var(--COLOR-DONE);
+}
+
+.task img {
+  height: 1.5rem;
+  cursor: pointer;
 }
