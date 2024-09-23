@@ -2,6 +2,31 @@
   background: linear-gradient(to right, #8e2de2, #f953c6); /* Gradiente de roxo ao rosa */
   min-height: 100vh;
   display: flex;
+  flex-direction: column; /* Organiza o título e as colunas verticalmente */
+  justify-content: flex-start; /* Coloca os itens no topo */
+  align-items: center;
+  padding-top: 4rem; /* Adiciona espaço no topo */
+}
+
+.title {
+  font-size: 4rem; /* Texto grande para o título */
+  color: white;
+  margin-bottom: 2rem; /* Espaço entre o título e as colunas */
+  text-align: center;
+}
+
+.columns {
+  display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
+  gap: 1rem; /* Espaçamento entre as colunas */
+  margin-top: 2rem;
+  width: 100%; /* Faz as colunas ocuparem toda a largura disponível */
+  padding: 0 2rem; /* Adiciona um padding nas laterais */
+}
+
+.columns > * {
+  flex: 1; /* Faz com que cada coluna ocupe espaço igual */
+  min-width: 250px; /* Define uma largura mínima para as colunas */
+  max-width: 300px; /* Define uma largura máxima para as colunas */
 }

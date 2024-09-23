@@ -4,9 +4,12 @@ import Column from "./components/Column";
 function App() {
   return (
     <div className="App">
-      <Column state="PLANNED" />
-      <Column state="ONGOING" />
-      <Column state="DONE" />
+      <h1 className="title">Zustand Kanban</h1>
+      <div className="columns">
+        <Column state="PLANNED" />
+        <Column state="ONGOING" />
+        <Column state="DONE" />
+      </div>
     </div>
   );
 }
