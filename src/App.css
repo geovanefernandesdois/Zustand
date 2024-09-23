@@ -1,5 +1,5 @@
 .App {
-  background: var(--COLOR-GRAY);
+  background: linear-gradient(to right, #8e2de2, #f953c6); /* Gradiente de roxo ao rosa */
   min-height: 100vh;
   display: flex;
   justify-content: center;
