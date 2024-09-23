@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { useStore } from "../store";
 import "./Task.css";
-import trashicon from "../assets/icons8-lixo.svg";
+import trashicon from "../assets/icons8-lixo.png";
 
 export default function Task({ title }) {
   const task = useStore((store) =>

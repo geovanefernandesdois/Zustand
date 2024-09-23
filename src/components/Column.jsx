@@ -3,6 +3,7 @@ import { useStore } from "../store";
 import Task from "./Task";
 import { useState } from "react";
 import classNames from "classnames";
+import addIcon from "../assets/add-icon.png";
 
 export default function Column({ state }) {
   const [text, setText] = useState("");
@@ -37,7 +38,7 @@ export default function Column({ state }) {
     >
       <div className="titleWrapper">
         <p>{state}</p>
-        <button onClick={() => setOpen(true)}>Add</button>
+        <button onClick={() => setOpen(true)}><img src={addIcon} alt="Add" className="addIcon" /></button>
       </div>
       {tasks.map((task) => (
         <Task title={task.title} key={task.title} />
