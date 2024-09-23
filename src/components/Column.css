@@ -1,11 +1,12 @@
 .column {
-  background-color: var(--COLOR-GRAY-DARK);
-  min-height: 20rem;
+  background-color: #101204;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  min-height: 30rem;
   color: white;
   width: 33%;
   max-width: 20rem;
   margin: 0 0.5rem;
-  border-radius: 4px;
+  border-radius: 20px;
   padding: 0.5rem;
   border: dashed transparent 4px;
 }
@@ -16,18 +17,36 @@
 
 .titleWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: rgb(182, 194, 207);
+  position: relative; /* Para permitir a posição absoluta do botão */
+  margin-bottom: 1rem; /* Espaço entre o título e o conteúdo */
+  font-weight: bold;
+}
+
+.titleWrapper p {
+  flex-grow: 1; /* Faz o título ocupar todo o espaço disponível */
+  text-align: center; /* Garante que o título seja centralizado */
+  margin: 0;
 }
 
 .titleWrapper button {
   all: unset;
-  color: black;
-  background: white;
+  background: transparent; /* Define o fundo transparente */
+  border: none; /* Remove qualquer borda */
+  color: #101204;
   padding: 0.5rem;
   border-radius: 4px;
   height: fit-content;
+  right: 0; /* Posiciona o botão no extremo direito */
+}
+
+.titleWrapper button img {
+  width: 24px; /* Ajuste o tamanho conforme necessário */
+  height: 24px;
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
 .titleWrapper button:hover {

@@ -1,8 +1,9 @@
 .task {
-  background-color: white;
-  border-radius: 4px;
-  min-height: 5rem;
-  color: black;
+  background-color:#2a323b;
+  border-radius: 8px;
+  min-height: 7rem;
+  color: rgb(182, 194, 207);
+  font-weight: bold;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -21,18 +22,25 @@
   background: var(--COLOR-GRAY-LIGHT);
   padding: 0.25rem;
   border-radius: 4px;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+  height: 100%;           /* Garante que o texto ocupe a altura completa */
+  text-align: center;     /* Garante que o texto seja alinhado */
 }
 
 .PLANNED {
   background: var(--COLOR-GRAY-LIGHT);
+  color: white;
 }
 
 .ONGOING {
   background: var(--COLOR-ONGOING);
+  color: white;
 }
 
 .DONE {
   background: var(--COLOR-DONE);
+  color: white;
 }
 
 .task img {
